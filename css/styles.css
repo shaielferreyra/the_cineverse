@@ -1,0 +1,47 @@
+.map-form-section {
+    background-color: #564095;
+    position: relative;
+    padding: 50px 0;
+}
+
+.map-form-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://image.slidesdocs.com/responsive-images/background/desolate-cinema-in-3d-no-one-in-sight-powerpoint-background_034b796525__960_540.jpg) no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.map-form-section .content {
+    position: relative;
+    z-index: 2;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 445px;
+    border: none;
+}
+
+.form-container {
+    background:#c3b0f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+     /* Ajustes responsivos para el mapa */
+     @media (max-width: 768px) {
+        .map-container iframe {
+            height: 200px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .map-container iframe {
+            height: 150px;
+        }
+    }
