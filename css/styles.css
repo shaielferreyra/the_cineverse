@@ -17,9 +17,9 @@
   background-color: rgba(115, 92, 118, 0.8); /* Fondo semitransparente */
   display: flex;
   justify-content: space-between;
-  align-items :center;
+  align-items: center;
   padding: 10px 20px;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 /* Estilo del subtítulo */
@@ -56,13 +56,18 @@
 }
 
 .enlaces li a:hover {
-  background-color: rgba(2, 23, 104, 0.364); /* Fondo gris semitransparente al hover */
+  background-color: rgba(
+    2,
+    23,
+    104,
+    0.364
+  ); /* Fondo gris semitransparente al hover */
   color: white;
 }
 
 /* Estilos del botón de hamburguesa */
 .hamburguesa {
-  display: none; 
+  display: none;
   background: transparent;
   border: none;
   color: #d2d1d1;
@@ -95,7 +100,7 @@
   .hamburguesa {
     display: block;
   }
-  
+
   .contenedor-menu {
     justify-content: space-between;
   }
@@ -106,10 +111,10 @@
   }
 }
 
- /*------------Seccion Estrenos de Cartelera------------ */
+/*------------Seccion Estrenos de Cartelera------------ */
 .contenedor-principal {
-  font-family: "Playfair Display", serif; 
-  font-size: 2.5rem; 
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
   color: #d5d5d5;
   text-align: left;
   margin-bottom: 20px;
@@ -123,7 +128,6 @@
 }
 body {
   background-color: #d2d2d2;
-
 }
 #estrenos-cartelera {
   height: 100vh; /* Tamaño completo de la ventana */
@@ -131,7 +135,6 @@ body {
   background-position: center; /* Centra las imágenes */
   animation: cambiarFondo 10s infinite; /* Cambia de fondo cada 10 segundos */
   background-color: #670254;
-
 }
 /* Estilos para el carrusel */
 .carousel-inner {
@@ -143,12 +146,12 @@ body {
 }
 /* Estilo para los títulos de las tarjetas */
 .tarjeta .card-body {
-  padding: 15px; 
+  padding: 15px;
 }
 
 /* Estilo para el título */
 .tarjeta .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   font-weight: 600;
   color: white;
@@ -168,7 +171,8 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex-shrink: 0;
   width: 22%;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
 }
 
@@ -213,11 +217,21 @@ body {
 }
 /*------------Seccion Top Peliculas------------ */
 .seccion-top-10 {
-  background-image: url("img/fondo/fondo-top10.png");
+  background-image: url("../img/fondo/fondo-top10.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 30px;
+}
+
+.titulo-seccion {
+  font-family: "Playfair Display", serif; /* Fuente para el título */
+  font-size: 2.5rem; /* Tamaño más destacado */
+  font-weight: bold;
+  color: #d5d5d5;
+  text-align: left;
+  margin-bottom: 20px;
+  padding: 40px;
 }
 
 .seccion-top-10 h2 {
