@@ -304,3 +304,50 @@ body {
     flex: 1 1 calc(50% - 20px); /* 2 tarjetas por fila en móviles */
   }
 }
+/* Estilos personalizados mínimos para Próximos Estrenos */
+.estrenos {
+  background-color: #943489;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.titulo-seccion {
+  color: #d5d5d5;
+  font-family: "Playfair Display", serif; 
+}
+
+
+.estreno .card-body {
+  background-color: rgba(189, 189, 189, 0.8); /* Fondo semi-transparente */
+}
+
+.estreno-ano {
+  font-size: 1rem;
+  color: #382f7a;
+  font-weight: bold;
+}
+
+.estreno-titulo {
+  color: #382f7a;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.estreno-titulo:hover {
+  color: #280fb4;
+}
+
+.estreno-descripcion {
+  font-size: 0.9rem;
+  color: #4a4949;
+  font-family: 'Segoe UI', Tahoma, Ge
+neva, Verdana, sans-serif;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .estreno .card-body {
+    text-align: center;
+  }
+}
+
