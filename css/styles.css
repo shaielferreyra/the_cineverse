@@ -2,6 +2,50 @@
   margin: 0;
   padding: 0;
 }
+
+
+.navbar {
+  background-color: #211a6a !important; /* Fondo oscuro */
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f8f9fa !important; /* Logo blanco */
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.2rem;
+  color: #cccccc !important; /* Texto blanco */
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f3f3f3 !important; /* Color de hover */
+}
+
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #943489;
+  color: white;
+  border-color: #929292;
+}
+
+.modal-content {
+  background-color: #343a40; /* Fondo oscuro del modal */
+}
+
+.modal-header, .modal-body, .modal-footer {
+  color: #f8f9fa; /* Texto claro */
+}
+
+
 /* Fondo sólido del menú secundario */
 .menu-secundario {
   background-color: #510243;
