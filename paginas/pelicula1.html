@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ES-AR">
+<head>
+    <meta name="author" content="Ferreyra Shaiel, Melnik Conrado, Vivanco Matias, Ribera Dario." />
+    <meta name="description" content="Un vlog donde encontrarás reseñas detalladas de las últimas novedades, entrevistas exclusivas con directores y actores, y análisis profundos de clásicos del cine." />
+    <meta name="keywords" content="Reseña, proximos estrenos, categorias." />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/670adfdae29ce400014fca56/picture" type="image/x-icon" />
+    <title>The cineverse.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    rel="stylesheet"/>
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vincular tu archivo CSS personalizado (si lo tienes) -->
+  <link href="../css/styles.css" rel="stylesheet" />
+</head>
+<body> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./img/logo/ss-removebg-preview.png" alt="Logo" style="height: 90px; width: auto; margin-left: 10px;">
+                </a>
+                <!-- Botón hamburguesa centrado -->
+                <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categorías</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                    </ul>
+                    <!-- Botones Login y Suscripción dentro del menú en pantallas pequeñas -->
+                    <div class="d-lg-none text-center mt-3">
+                        <a class="btn btn-outline-light me-2" href="./paginas/iniciar_sesion.html">
+                            <i class="bi bi-person-circle me-2"></i>Iniciar sesión
+                        </a>
+                        <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#suscripcionModal">
+                            <i class="bi bi-envelope me-2"></i>Suscripción
+                        </a>
+                    </div>
+                </div>
+                <!-- Botones Login y Suscripción para pantallas grandes -->
+                <div class="d-none d-lg-flex">
+                    <a class="btn btn-outline-light me-2" href="./paginas/iniciar_sesion.html">
+                        <i class="bi bi-person-circle me-2"></i>
+                    </a>
+                    <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#suscripcionModal">
+                        <i class="bi bi-envelope me-2"></i>Suscripción
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+      <!-- Contenedor principal aislado -->
+    <div class="custom-detalle-container">
+      <div class="container my-5">
+
+          <!-- Imagen Representativa -->
+          <div class="custom-detalle-image-container mb-4">
+              <img src="https://i.ytimg.com/vi/slHpDcRYsJo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCL4UUO98wakcMnQAhHoxyKtgQq-Q" alt="Película Representativa" class="custom-detalle-img rounded">
+          </div>
+
+          <!-- Texto Descriptivo -->
+          <div class="custom-detalle-overlay mb-5">
+              <h2 class="custom-detalle-title">Descripción</h2>
+              <p>
+                Venom: El último baile es una película estadounidense de superhéroes de 2024, basada en el personaje de Marvel Comics, Venom.
+              </p>
+              <p>
+                La secuela de Venom (2018) y Venom: Let There Be Carnage (2021), y la quinta película del Universo Spider-Man de Sony (SSU), fue escrita y dirigida y coproducida por Kelly Marcel. Tom Hardy protagoniza como Eddie Brock y Venom, junto a Chiwetel Ejiofor, Juno Temple, Rhys Ifans, Stephen Graham, Peggy Lu, Clark Backo, Alanna Ubach y Andy Serkis.
+              </p>
+          </div>
+
+          <!-- Formulario de Comentarios -->
+          <div class="custom-detalle-overlay mb-4">
+              <h3 class="custom-detalle-title">Deja un Comentario</h3>
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Nombre</label>
+                      <input type="text" class="custom-detalle-form-control form-control" id="name" placeholder="Tu nombre">
+                  </div>
+                  <div class="mb-3">
+                      <label for="comment" class="form-label">Comentario</label>
+                      <textarea class="custom-detalle-form-control form-control" id="comment" rows="3" placeholder="Escribe tu comentario aquí"></textarea>
+                  </div>
+                  <button type="submit" class="btn custom-detalle-btn">Enviar</button>
+              </form>
+          </div>
+
+          <!-- Visualización de Comentarios -->
+          <div class="custom-detalle-overlay">
+              <h3 class="custom-detalle-title">Comentarios</h3>
+              <ul class="list-group">
+                  <li class="list-group-item custom-detalle-list-group-item">
+                      <strong>Juan Pérez</strong> <small class="text-white">- 10/06/2024</small>
+                      <p>¡Excelente película! Muy recomendable para toda la familia.</p>
+                  </li>
+                  <li class="list-group-item custom-detalle-list-group-item">
+                      <strong>María López</strong> <small class="text-white">- 08/06/2024</small>
+                      <p>La trama fue increíble y las actuaciones destacaron. ¡Me encantó!</p>
+                  </li>
+                  <li class="list-group-item custom-detalle-list-group-item">
+                      <strong>Carlos Ruiz</strong> <small class="text-white">- 07/06/2024</small>
+                      <p>Muy buena, aunque el final fue un poco predecible. Aun así, vale la pena verla.</p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #211A6A">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  The CineVerse.
+                </h6>
+                <p>
+                  Sumérgete en un universo cinematográfico creado especialmente para ti. Descubre reseñas expertas, recomendaciones personalizadas y noticias de estreno. Tu viaje cinematográfico comienza aquí.
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Sobre Nosotros</h6>
+                <p>
+                  <a class="text-white" href="./paginas/sobre-nosotros.html">Conoce mas sobre los desarrolladores.</a> 
+                </p>
+              </div>
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contacto</h6>
+                <p><i class="fas fa-home mr-3"></i>  Gral. José María Paz 576, SMT, Tucumán, AR.</p>
+                <p><i class="fas fa-envelope mr-3"></i>academy@rollingcodeschool.com</p>
+                <p><i class="fas fa-phone mr-3"></i> +54 381 578-3030</p>
+              </div>
+              <!-- Grid column -->
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mt-3">
+                <h6 class="">Redes Sociales</h6>
+                <!-- Facebook -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                </svg>
+                <!-- Twitter -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                </svg>
+                <!-- Instagram -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg>
+                <!-- Github -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+              </div>
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div
+             class="text-center p-3"
+             style="background-color: rgba(0, 0, 0, 0.2)"
+             >
+          © 2024 Copyright:
+          <a class="text-white" href=>The cineverse.</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  </html>
+</body>

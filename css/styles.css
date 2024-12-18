@@ -731,3 +731,203 @@ neva, Verdana, sans-serif;
     margin: 0;
   }
 }
+body {
+  background-image: url('https://img.global.news.samsung.com/global/wp-content/uploads/2018/12/Samsung-Onyx-Capital-Theater-Beijing_main.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.692); /* Oscurece la imagen de fondo */
+z-index: -1;
+}
+.card {
+background: rgba(0, 0, 0, 0.7);
+color: #fff;
+}
+h3, h4 {
+color: #DC7BB1;
+}
+.btn-primary {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+}
+.btn-primary:hover {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+}
+.list-group-item {
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+}
+.pagination .page-link {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+color: #000;
+}
+.pagination .page-link:hover {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+color: #000;
+}
+.pagination .page-item.active .page-link {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+color: #fff;
+}
+
+.detalle-body {
+position: relative;
+background-image: url('https://i.blogs.es/e2fe91/captura-de-pantalla-2024-10-31-a-las-18.07.59/500_333.jpeg');
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+
+/* Oscurecer el background solo para este contenedor */
+.detalle-body::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+z-index: -1;
+}
+
+/* Estilos personalizados para esta página */
+.detalle-overlay {
+background: rgba(0, 0, 0, 0.7);
+padding: 20px;
+border-radius: 10px;
+}
+
+.detalle-title {
+color: #564095;
+font-weight: bold;
+}
+
+.detalle-card {
+background: rgba(51, 49, 49, 0.664);
+color: #fff;
+border: none;
+}
+
+.detalle-btn {
+background-color:#564095;
+border: none;
+color: #000;
+font-weight: bold;
+}
+
+.detalle-btn:hover {
+background-color: #564095;
+}
+
+.detalle-form-control {
+background: rgba(128, 126, 126, 0.6);
+color: #fff;
+border: none;
+}
+
+.detalle-form-control::placeholder {
+color: #ccc;
+border: none;
+}
+
+.detalle-image-container {
+text-align: center;
+}
+
+.detalle-img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
+height: auto;
+}
+/* Contenedor principal único */
+.custom-detalle-container {
+position: relative;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('https://media.revistagq.com/photos/665eca6ba0931fb1497451ac/16:9/w_2560%2Cc_limit/venomlettherebecarnage_gallery_1_0.png') center/cover no-repeat;
+color: #fff;
+}
+/* Limitar estilos a este contenedor */
+.custom-detalle-container .custom-detalle-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.custom-detalle-container .custom-detalle-title {
+  color: #564095;
+  font-weight: bold;
+}
+
+.custom-detalle-container .custom-detalle-card {
+  background: rgba(102, 99, 99, 0.8);
+  color: #fff;
+  border: none;
+}
+
+.custom-detalle-container .custom-detalle-btn {
+  background-color: #564095;
+  border: none;
+  color: #4d4949;
+  font-weight: bold;
+}
+
+.custom-detalle-container .custom-detalle-btn:hover {
+  background-color: #564095;
+}
+
+.custom-detalle-form-control {
+  background: rgba(116, 109, 109, 0.473);
+  color: #fff;
+  border: none;
+}
+
+.custom-detalle-form-control::placeholder {
+  color: #ccc;
+  border: none;
+}
+
+.custom-detalle-container .custom-detalle-image-container {
+  text-align: center;
+}
+
+.custom-detalle-container .custom-detalle-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+/* Quitar bordes de los comentarios */
+.custom-detalle-container .custom-detalle-list-group-item {
+  background: rgba(128, 126, 126, 0.322);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+body {
+  padding-top: 75px; /* Ajusta esto según la altura de tu navbar */
+}
+
+@media (max-width: 768px) {
+  body {
+      padding-top: 100px; /* Más espacio para pantallas pequeñas si es necesario */
+  }
+}
