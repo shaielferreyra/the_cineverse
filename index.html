@@ -34,6 +34,7 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <!-- Enlaces de navegación (Centro) -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
@@ -50,8 +51,29 @@
               <a class="nav-link" href="./paginas/sobre-nosotros.html">Sobre nosotros</a>
             </li>
           </ul>
+
+  <!-- Enlaces de navegación (Centro) -->
+<div class="collapse navbar-collapse" id="navbarNav">
+  <ul class="navbar-nav mx-auto text-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Categorías</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Contacto</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="./paginas/sobre-nosotros.html">Sobre nosotros</a>
+    </li>
+  </ul>
+</div>
+
+  
+
           <!-- Botones de Login y Suscripción (Derecha) -->
-          <a class="btn btn-outline-light me-2" href="iniciar_sesion.html">
+          <a class="btn btn-outline-light me-2" href="./paginas/iniciar_sesion.html">
             <i class="bi bi-person-circle me-2"></i>Login
           </a>
           <a class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#suscripcionModal">
@@ -61,6 +83,7 @@
       </div>
     </nav>
   </header>
+
   <!-- Modal de Suscripción -->
   <div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
@@ -81,6 +104,32 @@
       </div>
     </div>
   </div>
+
+  
+<!-- Modal de Suscripción -->
+<div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" style="max-width: 45%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="suscripcionModalLabel">Suscripción a Novedades</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Introduce tu correo para recibir novedades" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
   <section class="menu-secundario">
     <div class="contenedor-menu">
       <!-- Subtítulo -->
