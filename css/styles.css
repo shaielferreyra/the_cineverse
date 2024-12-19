@@ -80,7 +80,7 @@
   }
 
   .card-body .card-title {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     font-weight: bold;
     color: #f8f9fa;
   }
@@ -624,3 +624,66 @@ body {
       padding-top: 100px; /* Más espacio para pantallas pequeñas si es necesario */
   }
 }
+
+/************** Estilo para  la  galería de imágenes *************/
+/* Estilo específico para el h2 de la galería */
+.titulo-galeria-h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #455aa395; /* Fondo oscuro */
+  color: #fff; /* Color blanco */
+  font-family: "Playfair Display", serif; 
+}
+
+.card-body h5{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 13.5px;
+  text-align: center;
+}
+
+/* Hover para las tarjetas */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#carouselPeliculas .carousel-inner {
+  width: 100%;
+  padding: 0 !important; 
+  margin: 0 !important;    
+}
+
+
+/* Hover para el título de la película */
+.card-title:hover {
+  color: #04024f; /
+}
+.card {
+  border: 2px solid #fff; /* Borde delgado */
+  padding: 1px; /* Espacio interno */
+  border-radius: 15px; /* Esquinas redondeadas */
+  background-color: #d1d1d1; /* Fondo claro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para más estilo */
+}
+
+/* Hover para el año de la película */
+.card-text:hover {
+  color: #080808; 
+
+/* Personalización de los botones del carousel */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-color: #9a9a9a; 
+
+/* Fondo de la galería */
+.carousel-item {
+  background-color: #3B4F8C; 
+
+/* Estilo para los controles del carousel */
+.carousel-control-prev, 
+.carousel-control-next {
+  color: #343a40; 
+}
+/************** Fin Estilo para  la  galería de imágenes *************/
