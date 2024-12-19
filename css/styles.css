@@ -676,14 +676,70 @@ body {
 .carousel-control-prev-icon, 
 .carousel-control-next-icon {
   background-color: #9a9a9a; 
-
+}
 /* Fondo de la galería */
 .carousel-item {
   background-color: #3B4F8C; 
+}
 
 /* Estilo para los controles del carousel */
 .carousel-control-prev, 
 .carousel-control-next {
   color: #343a40; 
 }
+}
 /************** Fin Estilo para  la  galería de imágenes *************/
+.body404 {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230720/pngtree-empty-screen-in-a-3d-rendered-cinema-hall-image_3715653.jpg'); /* Replace with a valid cinema-themed image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+.body404::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.error-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.error-code {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #a33333; /* Golden cinema tone */
+}
+.error-message {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.home-btn {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #801414;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+.home-btn:hover {
+  background-color: #d40b0b;
+  text-decoration: none;
+}
+.icon-film {
+  font-size: 4rem;
+  color: #ffcc00;
+}
