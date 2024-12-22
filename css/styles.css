@@ -118,10 +118,8 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 /*------------Seccion Top Peliculas------------ */
 .seccion-top-10 {
-  background-image: url("../img/fondo/fondo-top10.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
