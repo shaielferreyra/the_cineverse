@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 .navbar {
   background-color: #211a6a !important; /* Fondo oscuro */
 }
@@ -44,388 +43,82 @@
 .modal-header, .modal-body, .modal-footer {
   color: #f8f9fa; /* Texto claro */
 }
+  /* Estilo para section estrenos de cartelera */
+  .card-custom {
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Para evitar que la imagen se desborde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
+  .img-container {
+    overflow: hidden; /* Evita que la imagen se desborde */
+  }
 
-/* Fondo sólido del menú secundario */
-.menu-secundario {
-  background-color: #510243;
-  padding: 20px 0;
+  /* Efecto hover para la tarjeta */
+  .card-custom:hover {
+    transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
+  }
+
+  /* Efecto hover para las imágenes */
+  .img-hover {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .img-hover:hover {
+    transform: scale(1.1); /* Zoom al pasar el ratón */
+    opacity: 0.8; /* Leve oscurecimiento */
+  }
+
+  /* Estilo del card-body */
+  .card-body {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y semitransparente */
+    border-radius: 0 0 15px 15px;
+  
+  }
+
+  .card-body .card-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #f8f9fa;
+  }
+/* Estilos para los botones de control */
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; /* Ajuste el tamaño de los botones */
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  border-radius: 50%;
   display: flex;
   justify-content: center;
-}
-
-/* Contenedor semitransparente */
-.contenedor-menu {
-  max-width: 800px;
-  width: 100%;
-  background-color: rgba(115, 92, 118, 0.8); /* Fondo semitransparente */
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  border-radius: 8px;
 }
 
-/* Estilo del subtítulo */
-.subtitulo {
-  font-size: 18px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px; /* Espacio entre el ícono y el texto */
-  color: #d4d4d4;
+/* Posiciones específicas para los botones */
+.carousel-control-prev {
+  left: 10px;
+}
+.carousel-control-next {
+  right: 10px;
 }
 
-/* Estilo de los enlaces */
-.enlaces {
-  list-style: none;
-  display: flex;
-  gap: 15px; /* Espaciado entre los enlaces */
-  margin: 0;
-  padding: 0;
+/* Iconos de los botones */
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: white;
+  width: 20px;
+  height: 20px;
 }
 
-/* Estilos para los enlaces */
-.enlaces li {
-  margin: 0;
+/* Efecto hover */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.enlaces li a {
-  text-decoration: none;
-  color: #d2d1d1;
-  font-size: 16px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
-}
 
-.enlaces li a:hover {
-  background-color: rgba(
-    2,
-    23,
-    104,
-    0.364
-  ); /* Fondo gris semitransparente al hover */
-  color: white;
-}
-
-/* Estilos del botón de hamburguesa */
-.hamburguesa {
-  display: none;
-  background: transparent;
-  border: none;
-  color: #d2d1d1;
-  font-size: 30px;
-  cursor: pointer;
-}
-
-/* Menú normal en pantallas grandes */
-@media (min-width: 768px) {
-  .enlaces {
-    display: flex; /* Muestra el menú de forma horizontal en pantallas grandes */
-    margin: 0;
-    padding: 0; 
-  }
-  /* Fondo sólido del menú secundario */
-  .menu-secundario {
-    background-color: #510243;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Contenedor semitransparente */
-  .contenedor-menu {
-    max-width: 800px;
-    width: 100%;
-    background-color: rgba(115, 92, 118, 0.8); /* Fondo semitransparente */
-    display: flex;
-    justify-content: space-between;
-    align-items :center;
-    padding: 10px 20px;
-    border-radius: 8px; 
-  }
-  
-  /* Estilo del subtítulo */
-  .subtitulo {
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Espacio entre el ícono y el texto */
-    color: #d4d4d4;
-  }
-  
-  /* Estilo de los enlaces */
-  .enlaces {
-    list-style: none;
-    display: flex;
-    gap: 15px; /* Espaciado entre los enlaces */
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos para los enlaces */
-  .enlaces li {
-    margin: 0;
-  }
-  
-  .enlaces li a {
-    text-decoration: none;
-    color: #d2d1d1;
-    font-size: 16px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .enlaces li a:hover {
-    background-color: rgba(2, 23, 104, 0.364); /* Fondo gris semitransparente al hover */
-    color: white;
-  }
-  
-  /* Estilos del botón de hamburguesa */
-  .hamburguesa {
-    display: none; 
-    background: transparent;
-    border: none;
-    color: #d2d1d1;
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-
-  .contenedor-menu {
-    justify-content: space-between;
-  }
-
-  /* Al hacer clic en el botón de hamburguesa, mostrar el menú */
-  .hamburguesa:active + .enlaces {
-    display: flex; /* Muestra el menú cuando se presiona el botón */
-  }
-}
-
-/*------------Seccion Estrenos de Cartelera------------ */
-.contenedor-principal {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
-  color: #d5d5d5;
-  text-align: left;
-  margin-bottom: 20px;
-  padding: 30px;
-}
-
-.container-fluid {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-body {
-  background-color: #d2d2d2;
-}
-#estrenos-cartelera {
-  height: 100vh; /* Tamaño completo de la ventana */
-  background-size: cover;
-  background-position: center; /* Centra las imágenes */
-  animation: cambiarFondo 10s infinite; /* Cambia de fondo cada 10 segundos */
-  background-color: #670254;
-}
-/* Estilos para el carrusel */
-.carousel-inner {
-  display: flex;
-  overflow: hidden;
-  background-color: #670254;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* Estilo para los títulos de las tarjetas */
-.tarjeta .card-body {
-  padding: 15px;
-}
-
-/* Estilo para el título */
-.tarjeta .card-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  margin: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  padding: 5px 10px;
-  text-align: center;
-}
-
-/* Estilo para las tarjetas */
-.tarjeta {
-  border: 1px solid #555555;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex-shrink: 0;
-  width: 22%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  text-align: center;
-}
-
-.tarjeta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Imágenes dentro de las tarjetas */
-.card-img-top {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Estilo para las tarjetas en pantallas pequeñas (móviles) */
-@media (max-width: 576px) {
-  .tarjeta {
-    width: 48%;
-  }
-}
-
-  
-  /* Menú normal en pantallas grandes */
-  @media (min-width: 768px) {
-    .enlaces {
-      display: flex; /* Muestra el menú de forma horizontal en pantallas grandes */
-    }
-  
-    /* El botón de hamburguesa no se muestra en pantallas grandes */
-    .hamburguesa {
-      display: none;
-    }
-  }
-  
-  /* Ocultar el menú en pantallas pequeñas por defecto */
-  @media (max-width: 768px) {
-    .enlaces {
-      display: none; /* Esconde el menú en pantallas pequeñas */
-      flex-direction: column; /* Alinea los enlaces verticalmente */
-      gap: 10px;
-      margin-top: 10px;
-    }
-  
-    /* Mostrar el botón de hamburguesa en pantallas pequeñas */
-    .hamburguesa {
-      display: block;
-    }
-    
-    .contenedor-menu {
-      justify-content: space-between;
-    }
-  
-    /* Al hacer clic en el botón de hamburguesa, mostrar el menú */
-    .hamburguesa:active + .enlaces {
-      display: flex; /* Muestra el menú cuando se presiona el botón */
-    }
-
-  }
-  
-  
-  
-   /*------------Seccion Estrenos de Cartelera------------ */
-  .contenedor-principal {
-    font-family: "Playfair Display", serif; 
-    font-size: 2.5rem; 
-    color: #d5d5d5;
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 30px;
-  }
-  
-  .container-fluid {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-  }
-  body {
-    background-color: #d2d2d2;
-  
-  }
-  #estrenos-cartelera {
-    height: 100vh; /* Tamaño completo de la ventana */
-    background-size: cover;
-    background-position: center; /* Centra las imágenes */
-    animation: cambiarFondo 10s infinite; /* Cambia de fondo cada 10 segundos */
-    background-color: #670254;
-   
-  }
-  /* Estilos para el carrusel */
-  .carousel-inner {
-    display: flex;
-    overflow: hidden;
-    background-color: #670254;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  /* Estilo para los títulos de las tarjetas */
-  .tarjeta .card-body {
-    padding: 15px; 
-  }
-  
-  /* Estilo para el título */
-  .tarjeta .card-title {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    padding: 5px 10px;
-    text-align: center;
-  }
-  
-  /* Estilo para las tarjetas */
-  .tarjeta {
-    border: 1px solid #555555;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex-shrink: 0;
-    width: 22%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-  }
-  
-  .tarjeta:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Imágenes dentro de las tarjetas */
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Estilo para las tarjetas en pantallas pequeñas (móviles) */
-  @media (max-width: 576px) {
-    .tarjeta {
-      width: 48%;
-    }
-  }
-  
-  /* Estilo para las tarjetas en pantallas medianas (tabletas) */
-  @media (min-width: 576px) and (max-width: 768px) {
-    .tarjeta {
-      width: 30%;
-    }
-  }
-/* Botones de control (anterior y siguiente) */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
-}
 /*------------Seccion Top Peliculas------------ */
 .seccion-top-10 {
   background-image: url("../img/fondo/fondo-top10.png");
@@ -518,7 +211,7 @@ body {
 
 /* Estilos personalizados mínimos para Próximos Estrenos */
 .estrenos {
-  background-color: #943489;
+  background-color:darkslateblue;
   font-family: 'Gill Sans', sans-serif;
 }
 
@@ -529,7 +222,7 @@ body {
 
 
 .estreno .card-body {
-  background-color: rgba(189, 189, 189, 0.8); /* Fondo semi-transparente */
+  background-color: rgba(212, 212, 212, 0.866); /* Fondo semi-transparente */
 }
 
 .estreno-ano {
@@ -643,3 +336,410 @@ neva, Verdana, sans-serif;
   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 
+
+/************** estilo Login *************/
+.login-container {
+  background-image: url(../img/fondo/fondo\ login.jpg); /* Reemplaza con la ruta de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el formulario */
+.bg-opacity-75 {
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  border-radius: 15px;
+}
+
+  .titulo-principal {
+    font-family: "Playfair Display", serif; 
+  }
+
+
+
+.form-control {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.form-control::placeholder {
+  color: rgb(227, 226, 226);
+}
+
+/* Estilos de los botones de redes sociales */
+.btn-google {
+  background-color: #db4437;
+  border-color: #db4437;
+}
+
+.btn-google:hover {
+  background-color: #c1351d;
+}
+
+.btn-facebook {
+  background-color: #395daa;
+  border-color: #3b5998;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.modal-body input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal-footer .btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal-footer .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividad */
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+  .row {
+    margin: 0;
+  }
+}
+body {
+  background-image: url('https://img.global.news.samsung.com/global/wp-content/uploads/2018/12/Samsung-Onyx-Capital-Theater-Beijing_main.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  position: relative;
+}
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.692); /* Oscurece la imagen de fondo */
+z-index: -1;
+}
+.card {
+background: rgba(0, 0, 0, 0.7);
+color: #fff;
+}
+h3, h4 {
+color: #DC7BB1;
+}
+.btn-primary {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+}
+.btn-primary:hover {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+}
+.list-group-item {
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+}
+.pagination .page-link {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+color: #000;
+}
+.pagination .page-link:hover {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+color: #000;
+}
+.pagination .page-item.active .page-link {
+background-color: #DC7BB1;
+border-color: #DC7BB1;
+color: #fff;
+}
+
+.detalle-body {
+position: relative;
+background-image: url('https://i.blogs.es/e2fe91/captura-de-pantalla-2024-10-31-a-las-18.07.59/500_333.jpeg');
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+color: #fff;
+margin: 0;
+padding: 0;
+}
+
+/* Oscurecer el background solo para este contenedor */
+.detalle-body::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6);
+z-index: -1;
+}
+
+/* Estilos personalizados para esta página */
+.detalle-overlay {
+background: rgba(0, 0, 0, 0.7);
+padding: 20px;
+border-radius: 10px;
+}
+
+.detalle-title {
+color: #564095;
+font-weight: bold;
+}
+
+.detalle-card {
+background: rgba(51, 49, 49, 0.664);
+color: #fff;
+border: none;
+}
+
+.detalle-btn {
+background-color:#564095;
+border: none;
+color: #000;
+font-weight: bold;
+}
+
+.detalle-btn:hover {
+background-color: #564095;
+}
+
+.detalle-form-control {
+background: rgba(128, 126, 126, 0.6);
+color: #fff;
+border: none;
+}
+
+.detalle-form-control::placeholder {
+color: #ccc;
+border: none;
+}
+
+.detalle-image-container {
+text-align: center;
+}
+
+.detalle-img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
+height: auto;
+}
+/* Contenedor principal único */
+.custom-detalle-container {
+position: relative;
+background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+            url('https://media.revistagq.com/photos/665eca6ba0931fb1497451ac/16:9/w_2560%2Cc_limit/venomlettherebecarnage_gallery_1_0.png') center/cover no-repeat;
+color: #fff;
+}
+/* Limitar estilos a este contenedor */
+.custom-detalle-container .custom-detalle-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.custom-detalle-container .custom-detalle-title {
+  color: #564095;
+  font-weight: bold;
+}
+
+.custom-detalle-container .custom-detalle-card {
+  background: rgba(102, 99, 99, 0.8);
+  color: #fff;
+  border: none;
+}
+
+.custom-detalle-container .custom-detalle-btn {
+  background-color: #564095;
+  border: none;
+  color: #4d4949;
+  font-weight: bold;
+}
+
+.custom-detalle-container .custom-detalle-btn:hover {
+  background-color: #564095;
+}
+
+.custom-detalle-form-control {
+  background: rgba(116, 109, 109, 0.473);
+  color: #fff;
+  border: none;
+}
+
+.custom-detalle-form-control::placeholder {
+  color: #ccc;
+  border: none;
+}
+
+.custom-detalle-container .custom-detalle-image-container {
+  text-align: center;
+}
+
+.custom-detalle-container .custom-detalle-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+/* Quitar bordes de los comentarios */
+.custom-detalle-container .custom-detalle-list-group-item {
+  background: rgba(128, 126, 126, 0.322);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+body {
+  padding-top: 75px; /* Ajusta esto según la altura de tu navbar */
+}
+
+@media (max-width: 768px) {
+  body {
+      padding-top: 100px; /* Más espacio para pantallas pequeñas si es necesario */
+  }
+}
+
+/************** Estilo para  la  galería de imágenes *************/
+/* Estilo específico para el h2 de la galería */
+.titulo-galeria-h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #455aa395; /* Fondo oscuro */
+  color: #fff; /* Color blanco */
+  font-family: "Playfair Display", serif; 
+}
+
+.card-body h5{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 13.5px;
+  text-align: center;
+}
+
+/* Hover para las tarjetas */
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#carouselPeliculas .carousel-inner {
+  width: 100%;
+  padding: 0 !important; 
+  margin: 0 !important;    
+}
+
+
+/* Hover para el título de la película */
+.card-title:hover {
+  color: #04024f; /
+}
+.card {
+  border: 2px solid #fff; /* Borde delgado */
+  padding: 1px; /* Espacio interno */
+  border-radius: 15px; /* Esquinas redondeadas */
+  background-color: #d1d1d1; /* Fondo claro */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para más estilo */
+}
+
+/* Hover para el año de la película */
+.card-text:hover {
+  color: #080808; 
+
+/* Personalización de los botones del carousel */
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-color: #9a9a9a; 
+}
+/* Fondo de la galería */
+.carousel-item {
+  background-color: #3B4F8C; 
+}
+
+/* Estilo para los controles del carousel */
+.carousel-control-prev, 
+.carousel-control-next {
+  color: #343a40; 
+}
+}
+/************** Fin Estilo para  la  galería de imágenes *************/
+.body404 {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230720/pngtree-empty-screen-in-a-3d-rendered-cinema-hall-image_3715653.jpg'); /* Replace with a valid cinema-themed image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+.body404::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.error-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.error-code {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #a33333; /* Golden cinema tone */
+}
+.error-message {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.home-btn {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #801414;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  transition: background-color 0.3s;
+}
+.home-btn:hover {
+  background-color: #d40b0b;
+  text-decoration: none;
+}
+.icon-film {
+  font-size: 4rem;
+  color: #ffcc00;
+}
