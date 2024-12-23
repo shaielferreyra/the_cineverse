@@ -25,7 +25,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: #211A6A;">
       <div class="container-fluid">
         <!-- Logo a la izquierda con imagen y texto -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="./sobre-nosotros.html">
           <!-- Logo de imagen -->
           <img src="../img/logo/ss-removebg-preview.png" alt="Logo" style="height: 90px; width: auto; margin-left: 10px;">
           <!-- Texto del logo -->
@@ -61,23 +61,29 @@
   <!-- Modal de Suscripción -->
   <div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm">
+ <!-- Modal de Suscripción -->
+ <div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="suscripcionModalLabel">Suscripción a Novedades</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="Introduce tu correo para recibir novedades" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Suscribirse</button>
-          </form>
-        </div>
+          <div class="modal-header bg-dark text-white">
+              <h5 class="modal-title" id="suscripcionModalLabel">Suscríbete y recibe las ultimas novedades</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Suscribirme</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
       </div>
-    </div>
   </div>
+</div>
     <div class="container-fluid py-5">
         <!-- Encabezado -->
         <div class="text-center mb-5">
@@ -137,7 +143,6 @@ Cineverse busca ser más que un blog, es un lugar donde el cine se vive y se com
             <h5 class="mt-2">Contacto de los desarrolladores</h5>
              <h6 class="">Redes Sociales</h6>
             <div class="col-md-3 col-lg-2 col-xl-2 mt-3">
-               
                 <!-- Facebook -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
