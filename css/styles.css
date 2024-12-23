@@ -2,44 +2,36 @@
   margin: 0;
   padding: 0;
 }
-
 .navbar {
   background-color: #211a6a !important; /* Fondo oscuro */
 }
-
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: bold;
   color: #f8f9fa !important; /* Logo blanco */
 }
-
 .nav-link {
   font-size: 1.1rem;
   padding: 0.8rem 1.2rem;
   color: #cccccc !important; /* Texto blanco */
   transition: color 0.3s ease;
 }
-
 .nav-link:hover {
   color: #f3f3f3 !important; /* Color de hover */
 }
-
 .btn-outline-light {
   color: #f8f9fa;
   border-color: #f8f9fa;
   transition: color 0.3s ease, border-color 0.3s ease;
 }
-
 .btn-outline-light:hover {
   background-color: #943489;
   color: white;
   border-color: #929292;
 }
-
 .modal-content {
   background-color: #343a40; /* Fondo oscuro del modal */
 }
-
 .modal-header, .modal-body, .modal-footer {
   color: #f8f9fa; /* Texto claro */
 }
@@ -50,35 +42,28 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-
   .img-container {
     overflow: hidden; /* Evita que la imagen se desborde */
   }
-
   /* Efecto hover para la tarjeta */
   .card-custom:hover {
     transform: scale(1.05); /* Aumentar tamaño al pasar el ratón */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra */
   }
-
   /* Efecto hover para las imágenes */
   .img-hover {
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
-
   .img-hover:hover {
     transform: scale(1.1); /* Zoom al pasar el ratón */
     opacity: 0.8; /* Leve oscurecimiento */
   }
-
   /* Estilo del card-body */
   .card-body {
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro y semitransparente */
     border-radius: 0 0 15px 15px;
-  
   }
-
   .card-body .card-title {
     font-size: 0.9rem;
     font-weight: bold;
@@ -97,7 +82,6 @@
   justify-content: center;
   align-items: center;
 }
-
 /* Posiciones específicas para los botones */
 .carousel-control-prev {
   left: 10px;
@@ -105,19 +89,16 @@
 .carousel-control-next {
   right: 10px;
 }
-
 /* Iconos de los botones */
 .carousel-control-prev-icon, .carousel-control-next-icon {
   background-color: white;
   width: 20px;
   height: 20px;
 }
-
 /* Efecto hover */
 .carousel-control-prev:hover, .carousel-control-next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 /*------------Seccion Top Peliculas------------ */
 .seccion-top-10 {
   background-size: cover;
@@ -125,7 +106,6 @@
   background-repeat: no-repeat;
   padding: 30px;
 }
-
 .titulo-seccion {
   font-family: "Playfair Display", serif; /* Fuente para el título */
   font-size: 2.5rem; /* Tamaño más destacado */
@@ -135,11 +115,9 @@
   margin-bottom: 20px;
   padding: 40px;
 }
-
 .seccion-top-10 h2 {
   padding: 30px;
 }
-
 .top-10 {
   display: flex;
   justify-content: space-between;
@@ -150,7 +128,6 @@
   flex-wrap: wrap; /* Cambiado a wrap para permitir el apilamiento de tarjetas */
   overflow-x: auto;
 }
-
 .pelicula {
   position: relative;
   flex: 1 1 calc(20% - 20px); /* Tarjetas flexibles con un 20% de ancho pero ajustable */
@@ -159,17 +136,14 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px; /* Añadir margen inferior para evitar que las tarjetas toquen */
 }
-
 .pelicula img {
   width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
-
 .pelicula:hover img {
   transform: scale(1.1);
 }
-
 .numero {
   position: absolute;
   top: 2px;
@@ -181,86 +155,71 @@
   z-index: 1;
   pointer-events: none;
 }
-
 .estrellas {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
-
 .estrellas i {
   font-size: 20px;
   color: #a4a4a4;
   margin: 0 3px;
 }
-
 /* Adaptabilidad */
 @media (max-width: 768px) {
   .pelicula {
     flex: 1 1 calc(33.33% - 20px); /* 3 tarjetas por fila en pantallas más pequeñas */
   }
 }
-
 @media (max-width: 480px) {
   .pelicula {
     flex: 1 1 calc(50% - 20px); /* 2 tarjetas por fila en móviles */
   }
 }
-
 /* Estilos personalizados mínimos para Próximos Estrenos */
 .estrenos {
   background-color:darkslateblue;
   font-family: 'Gill Sans', sans-serif;
 }
-
 .titulo-seccion {
   color: #d5d5d5;
   font-family: "Playfair Display", serif; 
 }
-
-
 .estreno .card-body {
   background-color: rgba(212, 212, 212, 0.866); /* Fondo semi-transparente */
 }
-
 .estreno-ano {
   font-size: 1rem;
   color: #382f7a;
   font-weight: bold;
 }
-
 .estreno-titulo {
   color: #382f7a;
   font-size: 1.2rem;
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 .estreno-titulo:hover {
   color: #280fb4;
 }
-
 .estreno-descripcion {
   font-size: 0.9rem;
   color: #4a4949;
   font-family: 'Segoe UI', Tahoma, Ge
 neva, Verdana, sans-serif;
 }
-
 /* Responsividad */
 @media (max-width: 768px) {
   .estreno .card-body {
     text-align: center;
   }
 }
-
   /* Estilo para las tarjetas en pantallas grandes (escritorio) */
   @media (min-width: 768px) {
     .tarjeta {
       width: 22%;
     }
   }
-  
   /* Botones de control (anterior y siguiente) */
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
@@ -272,7 +231,6 @@ neva, Verdana, sans-serif;
     position: relative;
     padding: 50px 0;
   }
-  
   .map-form-section::before {
     content: '';
     position: absolute;
@@ -283,19 +241,16 @@ neva, Verdana, sans-serif;
     background: url(https://image.slidesdocs.com/responsive-images/background/desolate-cinema-in-3d-no-one-in-sight-powerpoint-background_034b796525__960_540.jpg) no-repeat center center/cover;
     opacity: 0.3;
     z-index: 1;
-  }
-  
+  } 
   .map-form-section .content {
     position: relative;
     z-index: 2;
   }
-  
   .map-container iframe {
     width: 100%;
     height: 445px;
     border: none;
   }
-  
   .form-container {
     background:#c3b0f8;
     padding: 20px;
@@ -308,7 +263,6 @@ neva, Verdana, sans-serif;
             height: 200px;
         }
     }
-  
     @media (max-width: 576px) {
         .map-container iframe {
             height: 150px;
@@ -332,9 +286,6 @@ neva, Verdana, sans-serif;
       color: #ff5722;
   }
   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
-
-
 /************** estilo Login *************/
 .login-container {
   background-image: url(../img/fondo/fondo\ login.jpg); /* Reemplaza con la ruta de tu imagen */
@@ -345,74 +296,59 @@ neva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
-
 /* Estilos para el formulario */
 .bg-opacity-75 {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
   border-radius: 15px;
 }
-
   .titulo-principal {
     font-family: "Playfair Display", serif; 
   }
-
-
-
 .form-control {
   border-radius: 10px;
   padding: 15px;
   background-color: #1f1f1f;
   color: white;
 }
-
 .form-control::placeholder {
   color: rgb(227, 226, 226);
 }
-
 /* Estilos de los botones de redes sociales */
 .btn-google {
   background-color: #db4437;
   border-color: #db4437;
 }
-
 .btn-google:hover {
   background-color: #c1351d;
 }
-
 .btn-facebook {
   background-color: #395daa;
   border-color: #3b5998;
 }
-
 .btn-facebook:hover {
   background-color: #2d4373;
 }
 .modal-content {
   border-radius: 10px;
 }
-
 .modal-header {
   background-color: #007bff;
   color: #fff;
   font-weight: bold;
 }
-
 .modal-body input {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
-
 .modal-footer .btn {
   background-color: #007bff;
   color: white;
 }
-
 .modal-footer .btn:hover {
   background-color: #0056b3;
 }
-
 /* Responsividad */
 @media (max-width: 767px) {
   .container {
@@ -474,7 +410,6 @@ background-color: #DC7BB1;
 border-color: #DC7BB1;
 color: #fff;
 }
-
 .detalle-body {
 position: relative;
 background-image: url('https://i.blogs.es/e2fe91/captura-de-pantalla-2024-10-31-a-las-18.07.59/500_333.jpeg');
@@ -485,7 +420,6 @@ color: #fff;
 margin: 0;
 padding: 0;
 }
-
 /* Oscurecer el background solo para este contenedor */
 .detalle-body::before {
 content: '';
@@ -497,51 +431,42 @@ height: 100%;
 background: rgba(0, 0, 0, 0.6);
 z-index: -1;
 }
-
 /* Estilos personalizados para esta página */
 .detalle-overlay {
 background: rgba(0, 0, 0, 0.7);
 padding: 20px;
 border-radius: 10px;
 }
-
 .detalle-title {
 color: #564095;
 font-weight: bold;
 }
-
 .detalle-card {
 background: rgba(51, 49, 49, 0.664);
 color: #fff;
 border: none;
 }
-
 .detalle-btn {
 background-color:#564095;
 border: none;
 color: #000;
 font-weight: bold;
 }
-
 .detalle-btn:hover {
 background-color: #564095;
 }
-
 .detalle-form-control {
 background: rgba(128, 126, 126, 0.6);
 color: #fff;
 border: none;
 }
-
 .detalle-form-control::placeholder {
 color: #ccc;
 border: none;
 }
-
 .detalle-image-container {
 text-align: center;
 }
-
 .detalle-img {
 display: block;
 margin: 0 auto;
@@ -561,44 +486,36 @@ color: #fff;
   padding: 20px;
   border-radius: 10px;
 }
-
 .custom-detalle-container .custom-detalle-title {
   color: #564095;
   font-weight: bold;
 }
-
 .custom-detalle-container .custom-detalle-card {
   background: rgba(102, 99, 99, 0.8);
   color: #fff;
   border: none;
 }
-
 .custom-detalle-container .custom-detalle-btn {
   background-color: #564095;
   border: none;
   color: #4d4949;
   font-weight: bold;
 }
-
 .custom-detalle-container .custom-detalle-btn:hover {
   background-color: #564095;
 }
-
 .custom-detalle-form-control {
   background: rgba(116, 109, 109, 0.473);
   color: #fff;
   border: none;
 }
-
 .custom-detalle-form-control::placeholder {
   color: #ccc;
   border: none;
 }
-
 .custom-detalle-container .custom-detalle-image-container {
   text-align: center;
 }
-
 .custom-detalle-container .custom-detalle-img {
   display: block;
   margin: 0 auto;
@@ -616,13 +533,11 @@ color: #fff;
 body {
   padding-top: 75px; /* Ajusta esto según la altura de tu navbar */
 }
-
 @media (max-width: 768px) {
   body {
       padding-top: 100px; /* Más espacio para pantallas pequeñas si es necesario */
   }
 }
-
 /************** Estilo para  la  galería de imágenes *************/
 /* Estilo específico para el h2 de la galería */
 .titulo-galeria-h2 {
@@ -633,14 +548,12 @@ body {
   color: #fff; /* Color blanco */
   font-family: "Playfair Display", serif; 
 }
-
 .card-body h5{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 13.5px;
   text-align: center;
 }
-
 /* Hover para las tarjetas */
 .card:hover {
   transform: scale(1.05);
@@ -652,8 +565,6 @@ body {
   padding: 0 !important; 
   margin: 0 !important;    
 }
-
-
 /* Hover para el título de la película */
 .card-title:hover {
   color: #04024f; /
@@ -665,7 +576,6 @@ body {
   background-color: #d1d1d1; /* Fondo claro */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para más estilo */
 }
-
 /* Hover para el año de la película */
 .card-text:hover {
   color: #080808; 
@@ -679,7 +589,6 @@ body {
 .carousel-item {
   background-color: #3B4F8C; 
 }
-
 /* Estilo para los controles del carousel */
 .carousel-control-prev, 
 .carousel-control-next {
