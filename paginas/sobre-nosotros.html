@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow" style="background-color: #211A6A;">
       <div class="container-fluid">
         <!-- Logo a la izquierda con imagen y texto -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="./sobre-nosotros.html">
           <!-- Logo de imagen -->
           <img src="../img/logo/ss-removebg-preview.png" alt="Logo" style="height: 90px; width: auto; margin-left: 10px;">
           <!-- Texto del logo -->
@@ -65,27 +65,29 @@
     </nav>
   </header>
   
-  <!-- Modal de Suscripción -->
-  <div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
+ <!-- Modal de Suscripción -->
+ <div class="modal fade" id="suscripcionModal" tabindex="-1" aria-labelledby="suscripcionModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="suscripcionModalLabel">Suscripción a Novedades</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo Electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="Introduce tu correo para recibir novedades" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Suscribirse</button>
-          </form>
-        </div>
+          <div class="modal-header bg-dark text-white">
+              <h5 class="modal-title" id="suscripcionModalLabel">Suscríbete y recibe las ultimas novedades</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Correo electrónico:</label>
+                      <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Suscribirme</button>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
       </div>
-    </div>
   </div>
-  
+</div>
 
     <div class="container-fluid py-5">
         <!-- Encabezado -->
